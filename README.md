@@ -74,16 +74,16 @@ h1 {
         <form method="POST">
             
             <div class="formelt">
-                Current (I): <input type="text" name="current" value="5.0"> A<br/>
+                Current (I): <input type="text" name="current" value={{current}}> A<br/>
             </div>
             <div class="formelt">
-                Resistance (R): <input type="text" name="resistance" value="2.0"> Ω<br/>
+                Resistance (R): <input type="text" name="resistance" value={{value}}> Ω<br/>
             </div>
             <div class="formelt">
                 <input type="submit" value="Calculate"><br/>
             </div>
             <div class="formelt">
-                Power (P): <input type="text" name="power" value="50.0"> W<br/>
+                Power (P): <input type="text" name="power" value={{value}}> W<br/>
             </div>
         </form>
     </div>
@@ -98,8 +98,18 @@ h1 {
 
 # HOMEPAGE:
 
+![Screenshot (130)](https://github.com/user-attachments/assets/aaede69c-067a-4c0b-a767-25b72aaa60fa)
 
-![Screenshot (130)](https://github.com/user-attachments/assets/f7029732-aaff-4a05-aa6b-85cb1d8ab679)
+# views.py:
+
+
+![Screenshot 2024-12-23 141734](https://github.com/user-attachments/assets/a995d39a-c096-4691-b026-a4c8d82c4717)
+
+# urls.py:
+
+
+![Screenshot 2024-12-23 141752](https://github.com/user-attachments/assets/e00eac45-b573-480b-b9f8-80fd4c147671)
+
 
 # RESULT:
 The program for performing server side processing is completed successfully.
