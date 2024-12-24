@@ -91,6 +91,38 @@ h1 {
 </body>
 </html>
 ```
+views.py
+```
+def powerlamp(request):
+    context={}
+    context['Power'] = ""
+    context['I'] = ""
+    context['R'] = ""
+    if request.method == 'POST':
+        print("POST method is used")
+        I = request.POST.get('Intensity','')
+        R = request.POST.get('Resistence','')
+        print('request=',request)
+        print('Intensity=',I)
+        print('Resistence=',R)
+        Power = int(I) * int(I) * int(R)
+        context['Power'] = Power
+        context['I'] = I
+        context['R'] = R
+        print('Power=',Power)
+    return render(request,'mathapp/math.html',context)
+```
+urls.py
+```
+from django.contrib import admin
+from django.urls import path
+from mathapp import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('PowerOfLampFilamentInAnIncandescentBulb/',views.powerlamp,name="PowerOfLampFilamentInAnIncandescentBulb"),
+    path('',views.powerlamp,name="PowerOfLampFilamentInAnIncandescentBulb"),
+]
+```
 # SERVER SIDE PROCESSING:
 
 ![Screenshot 2024-12-22 224413](https://github.com/user-attachments/assets/3172fc90-b7b5-424b-8484-0a78f4403250)
