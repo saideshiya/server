@@ -132,16 +132,6 @@ urlpatterns = [
 
 ![Screenshot (130)](https://github.com/user-attachments/assets/aaede69c-067a-4c0b-a767-25b72aaa60fa)
 
-# views.py:
-
-
-![Screenshot 2024-12-23 141734](https://github.com/user-attachments/assets/a995d39a-c096-4691-b026-a4c8d82c4717)
-
-# urls.py:
-
-
-![Screenshot 2024-12-23 141752](https://github.com/user-attachments/assets/e00eac45-b573-480b-b9f8-80fd4c147671)
-
 
 # RESULT:
 The program for performing server side processing is completed successfully.
